@@ -49,7 +49,8 @@
       "buildsystem": "simple",
       "build-options": {
         "env": {
-          "CARGO_HOME": "/run/build/clapgrep/cargo"
+          "CARGO_HOME": "/run/build/clapgrep/cargo",
+          "APP_ID": "de.leopoldluley.Clapgrep"
         }
       },
       "build-commands": [
