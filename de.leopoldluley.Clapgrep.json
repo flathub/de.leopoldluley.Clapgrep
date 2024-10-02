@@ -46,20 +46,18 @@
     },
     {
       "name": "clapgrep",
-      "buildsystem": "simple",
+      "no-autogen": true,
       "build-options": {
         "env": {
-          "CARGO_HOME": "/run/build/clapgrep/cargo"
+          "CARGO_HOME": "/run/build/clapgrep/cargo",
+          "APP_ID": "de.leopoldluley.Clapgrep"
         }
       },
-      "build-commands": [
-        "make --file=build-aux/Makefile"
-      ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/luleyleo/clapgrep/archive/refs/tags/v1.0.tar.gz",
-          "sha256": "daf8770f09313efc12e3105b18c9a3809fc9329b68b80ef0ec94c85f9f02ba7e"
+          "url": "https://github.com/luleyleo/clapgrep/archive/refs/tags/v1.1.tar.gz",
+          "sha256": "cb384aa9bed64607ed576ab59f6775e1bbe1f963663148313eecfb2fa40fb604"
         },
         "cargo-sources.json"
       ]
