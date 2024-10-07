@@ -56,8 +56,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/luleyleo/clapgrep/archive/refs/tags/v1.1.tar.gz",
-          "sha256": "cb384aa9bed64607ed576ab59f6775e1bbe1f963663148313eecfb2fa40fb604"
+          "url": "https://github.com/luleyleo/clapgrep/archive/refs/tags/v1.2.tar.gz",
+          "sha256": "9f71f17eef99143f8f018935fba6c8a5b503ca79ce8c09c0de2faaeb31cc8178"
         },
         "cargo-sources.json"
       ]
