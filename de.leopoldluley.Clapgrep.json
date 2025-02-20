@@ -52,11 +52,14 @@
           "CARGO_HOME": "/run/build/clapgrep/cargo"
         }
       },
+      "config-opts": [
+        "-Dextern_cargo_env=true"
+      ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/luleyleo/clapgrep/archive/refs/tags/v1.3.1.tar.gz",
-          "sha256": "1a0ca6e3c939956fa634c95b442d690137c1ad1e1b76fdcfdbf45f4b6a3a2603"
+          "url": "https://github.com/luleyleo/clapgrep/archive/refs/tags/v25.02.tar.gz",
+          "sha256": "a05d3ac660ee9e38e091b9a7af3dad2a80e08dc7fa19a6570d7fc75464c4854b"
         },
         "cargo-sources.json"
       ]
