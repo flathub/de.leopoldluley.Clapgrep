@@ -46,11 +46,10 @@
     },
     {
       "name": "clapgrep",
-      "no-autogen": true,
+      "buildsystem": "meson",
       "build-options": {
         "env": {
-          "CARGO_HOME": "/run/build/clapgrep/cargo",
-          "APP_ID": "de.leopoldluley.Clapgrep"
+          "CARGO_HOME": "/run/build/clapgrep/cargo"
         }
       },
       "sources": [
