@@ -20,5 +20,8 @@ rm -rf "$tag.tar.gz"
 echo "url = $tar_url"
 echo "sha256sum = $sha256sum"
 
-sed -i "s|\"url\": \".*$repo.*\"|\"url\": \"$tar_url\"|" de.leopoldluley.Clapgrep.json
-sed -i "s|\"sha256\": \".*\"|\"sha256\": \"$sha256sum\"|" de.leopoldluley.Clapgrep.json
+old_url=$(cat de.leopoldluley.Clapgrep.json | grep url | cut -d '"' -f 4 | tail -n 1)
+old_sha256sum=$(cat de.leopoldluley.Clapgrep.json | grep sha256 | cut -d '"' -f 4 | tail -n 1)
+
+sed -i "s|\"url\": \"$old_url\"|\"url\": \"$tar_url\"|" de.leopoldluley.Clapgrep.json
+sed -i "s|\"sha256\": \"$old_sha256sum\"|\"sha256\": \"$sha256sum\"|" de.leopoldluley.Clapgrep.json
