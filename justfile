@@ -10,7 +10,7 @@ remote := "clapgrep-release"
 # Configure flathub remote and install flatpak-builder
 setup:
   flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-  flatpak install -y flathub org.flatpak.Builder
+  flatpak install --user -y flathub org.flatpak.Builder
 
 # Update manifest and cargo-sources to the latest GitHub release
 update:
