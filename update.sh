@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -e
+
 repo="luleyleo/clapgrep"
 tag=$(curl -s https://api.github.com/repos/$repo/releases/latest | grep tag_name | cut -d '"' -f 4)
 
@@ -11,10 +13,12 @@ curl -s -L -O "$tar_url"
 
 sha256sum=$(sha256sum "$tag.tar.gz" | cut -d ' ' -f 1)
 
-tar -xf "$tag.tar.gz"
-./flatpak-cargo-generator.py -o cargo-sources.json "clapgrep-${tag:1}/Cargo.lock"
+mkdir "clapgrep-$tag"
+tar -xf "$tag.tar.gz" -C "clapgrep-$tag" --strip-components=1
 
-rm -rf "clapgrep-${tag:1}"
+./flatpak-cargo-generator.py -o cargo-sources.json "clapgrep-${tag}/Cargo.lock"
+
+rm -rf "clapgrep-${tag}"
 rm -rf "$tag.tar.gz"
 
 echo "url = $tar_url"
