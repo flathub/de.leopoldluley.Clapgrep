@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/flatpak/flatpak-builder/1.4.4/data/flatpak-manifest.schema.json",
     "id": "de.leopoldluley.Clapgrep",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -105,8 +105,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/luleyleo/clapgrep/archive/refs/tags/v25.07.tar.gz",
-                    "sha256": "ea1652207fc6c88de80b1fdf873424075c7ac3330377d6e942e278561fe4cf46"
+                    "url": "https://github.com/luleyleo/clapgrep/archive/refs/tags/v25.09.tar.gz",
+                    "sha256": "d8cf46b4280898eef9c611da87eef8f0a698dc507f44f9627582c0a26ebabf62"
                 },
                 "cargo-sources.json"
             ]
