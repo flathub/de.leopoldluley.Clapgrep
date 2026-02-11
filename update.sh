@@ -16,7 +16,7 @@ sha256sum=$(sha256sum "$tag.tar.gz" | cut -d ' ' -f 1)
 mkdir "clapgrep-$tag"
 tar -xf "$tag.tar.gz" -C "clapgrep-$tag" --strip-components=1
 
-./flatpak-cargo-generator.py -o cargo-sources.json "clapgrep-${tag}/Cargo.lock"
+uv run flatpak-cargo-generator.py -o cargo-sources.json "clapgrep-${tag}/Cargo.lock"
 
 rm -rf "clapgrep-${tag}"
 rm -rf "$tag.tar.gz"
