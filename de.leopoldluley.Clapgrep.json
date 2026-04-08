@@ -18,14 +18,11 @@
     ],
     "cleanup": [
         "/include",
+        "/lib/girepository-1.0",
         "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
+        "/share/gir-1.0",
         "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
+        "/share/pkgconfig"
     ],
     "build-options": {
         "append-path": "/usr/lib/sdk/rust-stable/bin"
