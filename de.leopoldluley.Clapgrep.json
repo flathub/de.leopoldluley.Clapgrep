@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/flatpak/flatpak-builder/1.4.4/data/flatpak-manifest.schema.json",
     "id": "de.leopoldluley.Clapgrep",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -18,14 +18,11 @@
     ],
     "cleanup": [
         "/include",
+        "/lib/girepository-1.0",
         "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
+        "/share/gir-1.0",
         "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
+        "/share/pkgconfig"
     ],
     "build-options": {
         "append-path": "/usr/lib/sdk/rust-stable/bin"
